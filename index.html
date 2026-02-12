@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Мой проект</title>
+    <meta name="description" content="Краткое описание проекта" />
+
+    <!-- Иконка (положи favicon.ico рядом с index.html или укажи путь) -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Стили (если есть отдельный файл) -->
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+  </head>
+
+  <body>
+    <header>
+      <h1>Привет!</h1>
+      <nav>
+        <a href="#main">К контенту</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section>
+        <h2>Заголовок секции</h2>
+        <p>Тут будет твой контент.</p>
+      </section>
+    </main>
+
+    <footer>
+      <small>© <span id="year"></span> Мой проект</small>
+    </footer>
+
+    <script>
+      // Автоподстановка текущего года в футер
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Скрипт приложения (если нужен отдельный файл) -->
+    <!-- <script src="main.js" defer></script> -->
+  </body>
+</html>
